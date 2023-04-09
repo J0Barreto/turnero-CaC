@@ -1,0 +1,260 @@
+header {
+    height: 20vh;
+    background: linear-gradient(#ffffff,#5dcccf);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #6c6d6d;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header p {
+    font-size: 25px;
+}
+
+.main-index {
+    display: flex;
+    height: 60vh;
+}
+
+.opciones {
+    background-color: #5dcccf;
+    height: 60vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /*margin: 0 auto; centrar el main*/
+}
+
+.opciones-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opciones-ul-lista {
+    background-color: rgb(216, 215, 213);
+    list-style: none;
+    height: 15vh;
+    width: 100%;
+    margin: 20px 150px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 1s;
+}
+
+.opciones-ul-lista:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: darkgray;
+    border: 2px solid gray;
+}
+
+.opciones-ul-lista a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+
+.opciones-ul-lista a:hover {
+    font-size: 25.3px;
+    color: blue;
+}
+
+.aside-left, .aside-right {
+    width: 20vw;
+    background: #5dcccf;
+}
+
+.aside-left img, .aside-right img {
+    height: 59vh;
+    width: 20vw;
+}
+
+footer img {
+    width: 100%;
+    height: 20vh;
+    margin: 0 0;
+}
+
+.header-sacar-turno {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.texto {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-sacar-turno nav, .regreso {
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    margin-top: 20px ;
+    width: 10vw;
+}
+
+.header-sacar-turno a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border: 2px solid #6c6d6d;
+    padding: 2px 2px;
+}
+
+.main-sacar-turno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100vw;
+    background: #5dcccf;
+}
+
+.turnos {
+    width: 60vw;
+    height: 60vh;
+}
+
+aside {
+    display: flex;
+}
+
+section {
+    display: flex;
+}
+
+.turnos-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    margin: 0 auto;
+}
+
+.turnos-lista-item {
+    list-style: none;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2vh 10vw;
+    background-color: rgb(126, 241, 236);
+    transition: 1.5s;
+}
+
+.turnos-lista-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: darkgray;
+    border: 2px solid gray;
+}
+
+.turnos-lista-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.right {
+    width: 30vw;
+}
+
+.rigth-patrocinadores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rigth-patrocinadores-lista {
+    list-style: none;
+    margin: 0;
+    width: 40vw ;
+}
+
+.rigth-patrocinadores-lista-img {
+    width: 25%;
+}
+
+.footer-sacar-turno {
+    background: linear-gradient(#5dcccf,#ffffff);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.ubicacion li {
+    display: flex;
+}
+
+/*css ticket virtual*/
+
+.main-ticket-virtual {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(#ffffff,#5dcccf,#ffffff);
+}
+
+.ticket-virtual-texto h2{
+    font-size: 2.5em;
+}
+
+.ticket-virtual-table table {
+    width: 30vw;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+tr,td, th {
+    border: 2px solid black;
+    width: 15vw;
+    height: 10vh;
+    vertical-align: middle;
+}
+
+.ticket-virtual-regreso {
+    border:  2px solid gray;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: #f0f0f0;
+    transition: 1.5s;
+}
+
+.ticket-virtual-regreso:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: darkgray;
+    border: 2px solid gray;
+}
+
+.ticket-virtual-regreso a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:960px){
+    header h1 {
+        font-size: 27px;
+    }
+
+    .opciones-ul-lista {
+        margin: auto 5px;
+    }
+}
+
